@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Star, Phone, Mail, Clock } from "lucide-react";
+import Link from "next/link";
 
 const DoctorProfilePage = () => {
   return (
@@ -148,9 +149,9 @@ const DoctorProfilePage = () => {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <button className="bg-white text-[#0B7EBE] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
+            <Link href="/book-appointment" className="bg-white text-[#0B7EBE] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
               Book Appointment
-            </button>
+            </Link>
             <button className="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#19C37D] transition">
               Chat with Doctor
             </button>
